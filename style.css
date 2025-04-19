@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('assets/fonts/OpenSans-Regular.woff2') format('woff2'),
+       url('assets/fonts/OpenSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('assets/fonts/OpenSans-Bold.woff2') format('woff2'),
+       url('assets/fonts/OpenSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.button-teal {
+  background-color: #03dac6 !important;
+  color: black !important;
+  padding: 0.75em 1.5em;     /* Bigger padding = bigger button */
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.25rem;        /* Bigger text */
+  display: inline-block;
+  margin: 0.5em 0;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+body {
+  background-color: #f5f5f5; /* light Gray background */
+  color: #333; /* Adjust text color for good contrast */
+}
+
+.button-teal:hover {
+  background-color: #00c4b4;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+
+
+.bold-centered {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .bold-right {
+    font-weight: bold;
+    text-align: right;
+  }
+
+  .image-card {
+    position: relative;
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;  /* Ensures the scaled image doesn't overflow */
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+    cursor: pointer;
+  }
+  
+  .image-card img {
+    width: 100%;
+    height: 300px;  /* You can adjust this as needed */
+    object-fit: contain;
+    display: block;
+    transition: filter 0.2s;
+  }
+  
+  .image-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    transform: scale(1.03);  /* Scaling the container */
+    border: 2px solid #3f51b5; /* Accent border */
+  }
+  
+  .image-card:hover img {
+    filter: brightness(85%);
+  }
+
+  .image-card::after {
+    content: "🔗";
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    font-size: 1.2rem;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    padding: 4px 6px;
+    pointer-events: none;
+  }
+
